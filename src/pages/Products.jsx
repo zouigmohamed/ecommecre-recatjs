@@ -19,7 +19,7 @@ const Home = () => {
   }, [products]);
   return (
     <>
-      <div className="mt-40 mb-5  flex sm:justify-start md:justify-center container gap-2 items-center mx-auto flex-wrap border-2 border-primary/40 p-8 rounded-2xl">
+      <div className="mt-40 mb-5  flex sm:justify-start md:justify-center container gap-2 items-center mx-auto flex-wrap border-b-2 border-primary/40 p-2 ">
         <button
           onClick={() => setFilteredProducts(products)}
           className="bg-emerald-400 p-2 h-auto rounded-xl   capitalize border-2 w-auto border-emerald-400 hover:bg-transparent"
@@ -37,10 +37,9 @@ const Home = () => {
           </div>
         ))}
       </div>
-      <>
-        <div className="  sm:w-1/2   sm:container md:w-3/12 border-2 border-primary/40 mx-auto mb-5  rounded-lg">
         <h3 className="text-center p-2 text-2xl capitalize">  {filteredProducts.length} product found </h3>
-        </div>
+      <>
+ 
         <section className="py-16 border-2 border-primary/40 container rounded-lg px-5 mx-auto">
           <div className="container w-full mx-auto flex justify-center ">
             <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] max-w-sm md:max-w-none md:mx-0">
