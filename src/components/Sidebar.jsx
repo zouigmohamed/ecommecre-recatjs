@@ -37,7 +37,7 @@ const Sidebar = () => {
           cart.map((item) => <CartItem key={item.id} item={item} />)
         )}
       </div>
-      <div className="border-4 border-bg-pink-200 w-full p-2 mt-12 rounded-lg flex justify-between items-center font-semibold capitalize">
+      <div className="border-4 border-bg-pink-200 w-full p-2 mt-2 rounded-lg flex justify-between items-center font-semibold capitalize">
         <div>
           <span className="mr-2">total : </span>$ {parseFloat(total.toFixed(2))}
         </div>
