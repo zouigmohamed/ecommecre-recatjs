@@ -25,16 +25,14 @@ const ProductDetails = () => {
               <img
                 className="max-h-[200px] lg:max-w-sm "
                 src={
-                  product.api_featured_image
-                    ? product.api_featured_image
-                    : product.image_link
+                  product.image
                 }
                 alt="image"
               />
             </div>
             <div className="flex-1 text-center lg:text-left">
               <h1 className="text-[26px] font-medium mb-2 max-w-[450px] mx-auto lg:mx-0">
-                {product.name}
+                {product.title}
               </h1>
               <div className="text-x text-red-500 font-medium mb-6">
                 $ {product.price}

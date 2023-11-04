@@ -14,7 +14,8 @@ const Product = ({ product }) => {
       <div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition">
         <div className='w-full h-full flex justify-center items-center'>
           <div className='w-[200px] mx-auto flex justify-center items-center'>
-            <img className='max-h-[160px] group-hover:scale-110 transition duration-500' src={product.api_featured_image ? product.api_featured_image : product.image_link} alt='image' /> 
+            {/* <img className='max-h-[160px] group-hover:scale-110 transition duration-500' src={product.api_featured_image ? product.api_featured_image : product.image_link} alt='image' />  */}
+            <img className='max-h-[160px] group-hover:scale-110 transition duration-500' src={product.image} alt='image' /> 
           </div>
 
         </div>
@@ -31,7 +32,7 @@ const Product = ({ product }) => {
       <div>
         <div className='text-sm capitalize text-gray-500 mb-1'>{product.category}</div>
         <Link to={`product/${product.id}`}>
-          <h2 className='font-semibold mb-1'>{product.name}</h2>
+          <h2 className='font-semibold mb-1'>{product.title}</h2>
         </Link >
         <h2 className='font-semibold'> $ {product.price}</h2>
       </div>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export const ProductContext = createContext();
 
-const url = "http://makeup-api.herokuapp.com/api/v1/products.json";
+const url = "https://fakestoreapi.com/products";
 
 const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);

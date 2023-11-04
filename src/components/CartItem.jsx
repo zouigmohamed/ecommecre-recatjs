@@ -12,9 +12,7 @@ const CartItem = ({ item }) => {
           <img
             className="max-w-[80px]"
             src={
-              item.api_featured_image
-                ? item.api_featured_image
-                : item.image_link
+              item.image
             }
             alt="image"
           />
@@ -25,7 +23,7 @@ const CartItem = ({ item }) => {
               to={`product/${item.id}`}
               className="text-sm uppercase font-medium max-w-[240px] text-primary hover:underline"
             >
-              {item.name}
+              {item.title}
             </Link>
             <div onClick={()=>removeFromCart(item.id)} className="text-xl cursor-pointer   hover:scale-150 hover:rounded-full  transition hover:bg-slate-400/40">
               <IoMdClose className="text-gray-500  hover:text-red-500/80" />
