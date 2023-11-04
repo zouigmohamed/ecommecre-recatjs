@@ -28,7 +28,7 @@ const Sidebar = () => {
           <IoMdArrowForward className="text-3xl" />
         </div>
       </div>
-      <div className=" flex flex-col gap-y-2 h-[120px] lg:h-[440px] overflow-y-auto">
+      <div className=" flex flex-col gap-y-2 h-[120px] lg:h-[640px] overflow-y-auto">
         {cart.length === 0 ? (
           <h1 className="w-3/4 rounded-md mx-auto text-center py-8  px-2 uppercase leading-10 border-4  border-bg-slate-500/30 my-5">
             no items added to your cart yet{" "}
@@ -37,7 +37,7 @@ const Sidebar = () => {
           cart.map((item) => <CartItem key={item.id} item={item} />)
         )}
       </div>
-      <div className="border-4 border-bg-pink-200 w-full p-2 mt-10 rounded-lg flex justify-between items-center font-semibold capitalize">
+      <div className="border-4 border-bg-pink-200 w-full p-2 mt-12 rounded-lg flex justify-between items-center font-semibold capitalize">
         <div>
           <span className="mr-2">total : </span>$ {parseFloat(total.toFixed(2))}
         </div>
