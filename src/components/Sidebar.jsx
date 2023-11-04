@@ -28,7 +28,7 @@ const Sidebar = () => {
           <IoMdArrowForward className="text-3xl" />
         </div>
       </div>
-      <div className=" flex flex-col gap-y-2 h-[520px] lg:h-[640px] overflow-y-auto">
+      <div className=" flex flex-col gap-y-2 h-[120px] lg:h-[440px] overflow-y-auto">
         {cart.length === 0 ? (
           <h1 className="w-3/4 rounded-md mx-auto text-center py-8  px-2 uppercase leading-10 border-4  border-bg-slate-500/30 my-5">
             no items added to your cart yet{" "}
