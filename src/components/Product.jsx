@@ -25,13 +25,13 @@ const Product = ({ product }) => {
               <BsPlus className='text-3xl'/>
             </div>
             </button>
-            <Link to={`product/${product.id}`} className='rounded-lg bg-white w-12 h-12 flex justify-center items-center text-primary drop-shadow-xl' ><BsEyeFill/></Link>
+            <Link to={`products/${product.id}`} className='rounded-lg bg-white w-12 h-12 flex justify-center items-center text-primary drop-shadow-xl' ><BsEyeFill/></Link>
           </div>
       </div>
 
       <div>
         <div className='text-sm capitalize text-gray-500 mb-1'>{product.category}</div>
-        <Link to={`product/${product.id}`}>
+        <Link to={`products/${product.id}`}>
           <h2 className='font-semibold mb-1'>{product.title}</h2>
         </Link >
         <h2 className='font-semibold'> $ {product.price}</h2>
@@ -43,7 +43,7 @@ const Product = ({ product }) => {
 
 // Add props validation using propTypes
 Product.propTypes = {
-  product: PropTypes.object.isRequired, // Change "object" to the appropriate data type of your product prop
+  product: PropTypes.object.isRequired, // Change
 };
 
 export default Product;

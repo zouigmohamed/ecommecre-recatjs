@@ -14,8 +14,8 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/product" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
         <Sidebar />
