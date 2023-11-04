@@ -15,7 +15,7 @@ const Sidebar = () => {
     <div
       className={`${
         isOpen ? "right-0" : "-right-full"
-      }  bg-white fixed top-0 h-full  w-full z-50 shadow-2xl md:w-[35vw] xl:max-w-[40vw] flex flex-col justify-between transition-all duration-300  px-4 lg:px-[35px] `}
+      }  bg-white fixed top-0 h-full  w-full z-50 shadow-2xl md:w-[40vw] xl:max-w-[45vw] flex flex-col justify-between transition-all duration-300  px-4 lg:px-[35px] `}
     >
       <div className="flex items-center justify-between py-6 flex-row border-b  ">
         <div className="uppercase text-sm font-semibold">
@@ -28,7 +28,7 @@ const Sidebar = () => {
           <IoMdArrowForward className="text-3xl" />
         </div>
       </div>
-      <div className=" flex flex-col gap-y-2 h-[120px] lg:h-[440px] sm:h-[400px]  overflow-y-auto ">
+      <div className=" flex flex-col gap-y-2 h-[120px] lg:h-[440px] sm:h-[400px]  flex-grow overflow-y-auto ">
         {cart.length === 0 ? (
           <h1 className="w-3/4 rounded-md mx-auto text-center py-8  px-2 uppercase leading-10 border-4  border-bg-slate-500/30 my-5">
             no items added to your cart yet{" "}
@@ -52,7 +52,7 @@ const Sidebar = () => {
             <FiTrash2 />
           </div>
         </div>
-        <div className="flex flex-col justify-between  mt-4 ">
+        <div className="flex flex-col justify-between  mt-4 tracking-[10px] ">
           <Link
             className={`${
               cart.length < 1 ? "cursor-not-allowed" : "cursor-pointer"
@@ -65,7 +65,7 @@ const Sidebar = () => {
               cart.length < 1 ? "cursor-not-allowed" : "cursor-pointer"
             } uppercase bg-primary text-white p-4 flex justify-center items-center font-medium rounded-lg    my-2 w-full `}
           >
-            view cart
+            check out
           </Link>
         </div>
       </div>
