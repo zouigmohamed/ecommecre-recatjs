@@ -18,14 +18,14 @@ const CartItem = ({ item }) => {
           />
         </Link>
         <div className="w-full flex flex-col">
-          <div className="flex justify-between mb-2">
+          <div className="flex justify-between mb-2 h-auto">
             <Link
               to={`products/${item.id}`}
               className="text-sm uppercase font-medium max-w-[240px] text-primary hover:underline"
             >
               {item.title}
             </Link>
-            <div onClick={()=>removeFromCart(item.id)} className="text-xl cursor-pointer   hover:scale-150 hover:rounded-full  transition hover:bg-slate-400/40">
+            <div onClick={()=>removeFromCart(item.id)} className="text-xl cursor-pointer   hover:scale-150 hover:rounded-full h-5  transition  hover:bg-slate-400/40">
               <IoMdClose className="text-gray-500  hover:text-red-500/80" />
             </div>
           </div>

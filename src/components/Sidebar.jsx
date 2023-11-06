@@ -44,7 +44,7 @@ const Sidebar = () => {
             {parseFloat(total.toFixed(2))}
           </div>
           <div
-            onClick={() => clearCart()}
+            onClick={() => {clearCart(); handleClose()}}
             className={`${
               cart.length < 1 ? "cursor-not-allowed" : "cursor-pointer"
             } py-4 bg-rose-600  text-white w-12 h-12 flex justify-center items-center text-xl border-2 border-transparent rounded-lg transition-all duration-300 hover:bg-transparent hover:text-black hover:border-rose-600`}
