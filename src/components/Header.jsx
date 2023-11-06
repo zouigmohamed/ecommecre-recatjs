@@ -24,7 +24,7 @@ const Header = () => {
       } fixed w-full z-50 h-20  transition-all top-0 `}
     >
       <div className="flex container mx-auto items-center  justify-between h-full relative   ">
-        <Link to={"/home"}
+        <Link to={"/"}
         onClick={() => {
           handleClose();
         }}

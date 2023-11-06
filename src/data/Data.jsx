@@ -1,7 +1,7 @@
 export const navLinks = [
   {
     text: "Home",
-    url: "/home",
+    url: "/",
   },
   {
     text: "Products",
