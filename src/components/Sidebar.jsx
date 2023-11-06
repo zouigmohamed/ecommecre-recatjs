@@ -23,9 +23,9 @@ const Sidebar = () => {
         </div>
         <div
           onClick={() => handleClose()}
-          className="cursor-pointer w-8 h-8 flex justify-center items-center rounded-sm bg-orange-700/40"
+          className="cursor-pointer w-10 h-10  flex justify-center items-center rounded-sm border-2 border-orange-700/20 hover:bg-transparent transition-all duration-300 bg-orange-700/40"
         >
-          <IoMdArrowForward className="text-3xl" />
+          <IoMdArrowForward className="text-xl" />
         </div>
       </div>
       <div className=" flex flex-col gap-y-2 h-[120px] lg:h-[440px] sm:h-[400px]  flex-grow overflow-y-auto ">
@@ -54,6 +54,8 @@ const Sidebar = () => {
         </div>
         <div className="flex flex-col justify-between  mt-4 tracking-[10px] ">
           <Link
+            to={"/cart"}
+            onClick={() => handleClose()}
             className={`${
               cart.length < 1 ? "cursor-not-allowed" : "cursor-pointer"
             } uppercase bg-gray-200 p-4 flex justify-center items-center font-medium rounded-lg  text-primary w-full `}

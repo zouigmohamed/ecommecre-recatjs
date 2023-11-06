@@ -25,6 +25,7 @@ export default {
       },
       backgroundImage: {
         hero: "url('./img/bg_hero.svg')",
+        about: "url('./img/online.jpg')",
       },
     },
   },
