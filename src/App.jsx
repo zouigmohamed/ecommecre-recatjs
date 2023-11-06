@@ -5,22 +5,22 @@ import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
 
-import Products from "./pages/Products";
+import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
-import About from "./pages/About";
+import Products from "./pages/Products";
 
 const App = () => {
   return (
-    <div className="flex justify-end flex-col">
+    <div className="flex   justify-between items-center flex-col">
       <Router>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/categories" element={<Products />} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="*" element={<h1>Not Found</h1>} />

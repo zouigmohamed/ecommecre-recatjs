@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import womanImage from "../img/woman_hero.png";
 const Hero = () => {
   return (
-    <section className=" h-[800px] bg-hero bg-no-repeat bg-center py-24">
+    <section className=" h-[800px] bg-hero bg-no-repeat bg-center w-full py-24">
       <div className="container mx-auto flex justify-around h-full">
         <div className="flex flex-col justify-center">
           <div className="font-semibold flex items-center uppercase">
