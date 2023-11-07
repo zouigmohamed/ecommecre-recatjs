@@ -37,7 +37,7 @@ const Sidebar = () => {
             <a
               href="/#products"
               onClick={() => handleClose()}
-              className="bg-emerald-300 p-2 rounded-lg text-gray-800 w-1/2 font-bold tracking-[8px]"
+              className="bg-emerald-300 p-2 w-full rounded-lg text-gray-800  font-semibold "
             >
               explore our products
             </a>
