@@ -71,6 +71,7 @@ const CartProvider = ({ children }) => {
   };
   const removeFromCart = (id) => {
     const newCart = cart.filter((item) => item.id !== id);
+    toast.warn("you have just deleted this  items ");
     setCart(newCart);
   };
   return (
