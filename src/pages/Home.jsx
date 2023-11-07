@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Hero from "../components/Hero";
 import Product from "../components/Product";
 import { ProductContext } from "../contexts/ProductContext";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   const { products } = useContext(ProductContext);
@@ -18,6 +19,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <ScrollToTop/>
+
     </div>
   );
 };

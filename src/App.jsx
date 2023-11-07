@@ -8,7 +8,6 @@ import ProductDetails from "./pages/ProductDetails";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
-import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
@@ -25,7 +24,6 @@ const App = () => {
         </Routes>
         <Sidebar />
         <Footer />
-        <ScrollToTop/>
       </Router>
     </div>
   );

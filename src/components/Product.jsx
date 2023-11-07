@@ -11,14 +11,14 @@ const Product = ({ product }) => {
   return (
     
     <div className=''id='products' >
-      <div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition">
+<div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition-transform transform translate-y-0 hover:-translate-y-2 duration-300">
         <div className='w-full h-full flex justify-center items-center'>
           <div className='w-[200px] mx-auto flex justify-center items-center'>
             <img className='max-h-[160px] group-hover:scale-110 transition duration-500' src={product.image} alt='image' /> 
           </div>
 
         </div>
-      <div className='flex flex-col items-center justify-center gap-y-2 opacity-0 group-hover:opacity-100 absolute transition-all duration-300   top-6 -right-11 group-hover:right-5 p-2'>
+      <div className='flex flex-col items-center justify-center gap-y-2 opacity-100 absolute transition-all duration-300   top-0 right-0  p-2'>
             <button onClick={()=>{ addToCart(product.id , product); }}>
               <div className='flex justify-center items-center rounded-lg text-white w-12 h-12 bg-red-500'>
               <BsPlus className='text-3xl'/>

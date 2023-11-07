@@ -13,6 +13,12 @@ const Header = () => {
   const { itemAmount } = useContext(CartContext);
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setToggle(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
     window.addEventListener("scroll", () => {
       window.scrollY > 50 ? setIsActive(true) : setIsActive(false);
     });
