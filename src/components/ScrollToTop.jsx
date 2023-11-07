@@ -6,7 +6,7 @@ const ScrollToTop = () => {
   // Add a scroll event listener to track the scroll position
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 500) {
+      if (window.scrollY > 500) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -26,7 +26,7 @@ const ScrollToTop = () => {
 
   return (
     <div
-      className={` z-50 fixed bottom-56 rounded-full cursor-pointer right-10 transition-all duration-700 ${
+      className={` z-50 fixed bottom-32 rounded-full cursor-pointer right-10 transition-all duration-700 ${
         isVisible ? "opacity-100" : "opacity-0 invisible"
       }`}
       onClick={scrollToTop}
