@@ -17,9 +17,17 @@ const Sidebar = () => {
       </div>
       <div className=" flex flex-col gap-y-2 h-[600px]   flex-grow overflow-y-auto ">
         {cart.length === 0 ? (
-          <h1 className=" rounded-md mx-auto text-center py-8 w-full px-2 uppercase leading-10 border-4  border-bg-slate-500/30 my-5">
-            no items added to your cart yet{" "}
+          <div className="w-3/4 rounded-md mx-auto text-center py-8  px-2 uppercase leading-10 border-4  border-bg-slate-500/30 my-5">
+          <h1 className="w-full rounded-md mx-auto text-center py-8  px-2 uppercase leading-10 ">
+            no items added to your cart yet
           </h1>
+          <Link
+            to={"/"}
+            className="bg-emerald-300 p-2 w-full rounded-lg text-gray-800  font-semibold "
+          >
+            explore our products
+          </Link>
+        </div>
         ) : (
           cart.map((item) => <CartItem key={item.id} item={item} />)
         )}

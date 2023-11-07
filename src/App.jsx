@@ -12,7 +12,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
-    <div className="flex   justify-between items-center flex-col">
+    <div className="flex  container mx-auto justify-between items-center flex-col">
       <Router>
         <Header />
         <Routes>

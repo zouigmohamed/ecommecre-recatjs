@@ -2,7 +2,7 @@ import aboutImage from "../img/online.jpg";
 
 const About = () => {
   return (
-    <div className="bg-red h-screen mx-auto flex flex-col justify-center items-center">
+    <div className=" h-screen mx-auto flex flex-col justify-center items-center">
       <div className="flex  flex-col-reverse md:flex-row w-full h-3/4 justify-center items-center xl:flex-row xl:items-end mt-6 xl:mt-24">
         <div className=" w-full xl:w-1/2 h-2/3 xl:h-full">
           <img src={aboutImage} alt="" className="h-full w-full object-contain" />
