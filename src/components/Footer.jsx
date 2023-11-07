@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   return (
-    <div className={`fixed bottom-0 w-full bg-gray-800 transition-all duration-700 ${showFooter ? 'h-28' : 'h-0 -bottom-72'}`}>
+    <div className={`fixed bottom-0 w-full h-28 bg-gray-800  ${showFooter ? 'block' : 'hidden -bottom-72'}`}>
       <div className="text-white text-center flex items-center justify-center h-full">
         <p className="">
           Copyright &copy; E-commerce Shop {getCurrentYear()}. All rights Reserved

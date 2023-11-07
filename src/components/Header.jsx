@@ -61,16 +61,15 @@ const Header = () => {
         </div>
         <a onClick={() => setToggle(!toggle)}>
           <div className="block md:hidden cursor-pointer rounded-full ml-4 hover:bg-slate-200 p-2 ">
-            {toggle ? <AiOutlineClose /> : <GiHamburgerMenu />}
+            {toggle ? <AiOutlineClose className="z-10 bg-gray-300  rounded-full" /> : <GiHamburgerMenu />}
           </div>
         </a>
         <div
-          className={`${
-            toggle
-              ? "flex-col absolute top-16 p-4 border-b-2 w-full right-0 bg-gray-300 rounded-b-lg flex justify-center capitalize   items-start"
-              : "hidden"
-          } md:hidden `}
-        >
+className={`${
+  toggle
+    ? "flex-col absolute top-16 p-4 border-b-2 container w-11/12 left-1/2 -translate-x-1/2 bg-gray-300 rounded-b-lg flex justify-center capitalize before items-start"
+    : "hidden"
+} md:hidden `}>
           {navLinks.map((link) => (
             <Link
               to={`${link.url}`}

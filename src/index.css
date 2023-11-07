@@ -19,3 +19,12 @@ transition-duration: 9000;
   cursor: not-allowed;
   pointer-events: none;
 }
+.before::before {
+  content: "";
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent transparent rgb(209 213 219) transparent;
+  position: absolute;
+  right:2px;
+  top: -40px;
+}
