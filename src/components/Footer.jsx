@@ -6,7 +6,7 @@ const getCurrentYear = () => {
 
 const Footer = () => {
   return (
-    <div className="bg-primary py-12 w-full  bottom-0">
+    <div className="bg-primary/80 py-12 w-full  fixed bottom-0">
       <div>
         <p className="text-white text-center">
           Copyright &copy; E-commerce Shop {getCurrentYear()}. All rights

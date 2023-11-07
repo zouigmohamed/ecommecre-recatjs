@@ -1,20 +1,16 @@
 export const navLinks = [
   {
     text: "Home",
-    url: "/",
-  },
-  {
-    text: "Products",
-    url: "/products",
+    url: "/#home",
   },
 
   {
-    text: "Contact Us",
-    url: "/contact",
-  },
-  {
     text: "About",
     url: "/about",
+  },
+  {
+    text: "Contact Us",
+    url: "/contact",
   },
   {
     text: "Cart",

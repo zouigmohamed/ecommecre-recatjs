@@ -8,12 +8,12 @@ import {
 import { socialMediaData } from "../data/Data";
 const Contact = () => {
   return (
-    <div className=" bg-gray-100  ">
-      <div className="container mx-auto flex h-full mb-0">
+    <div className=" bg-gray-100 h-screen w-full">
+      <div className="container mx-auto flex h-3/2 mb-0">
         <section className="text-gray-600 body-font container flex flex-col ">
           <div className="container px-5 pt-32 mx-auto mb-0 flex flex-col ">
-            <div className="flex flex-col text-center justify-between w-full mb-2">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+            <div className="flex flex-col text-center justify-between w-full ">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font  text-gray-900">
                 Contact Us
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -31,7 +31,7 @@ const Contact = () => {
                 possible..
               </p>
             </div>
-            <div className="lg:w-1/2 md:w-2/3 mx-auto h-auto">
+            <div className="lg:w-1/2 md:w-2/3 mx-auto h-3/2 mt-4">
               <div className="flex flex-wrap -m-2">
                 <div className="p-2 w-1/2">
                   <div className="relative">

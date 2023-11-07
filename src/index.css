@@ -9,3 +9,13 @@
 
   
 }
+html{
+  scroll-behavior: smooth;
+  transition: all;
+transition-duration: 9000;
+}
+.disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}

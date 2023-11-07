@@ -21,7 +21,7 @@ const Header = () => {
     <header
       className={`${
         isActive ? "bg-white py-4 shadow-2xl" : "bg-transparent py-6"
-      } fixed w-full z-50 h-20  transition-all top-0 `}
+      } fixed w-full z-10 h-20  transition-all top-0 `}
     >
       <div className="flex container mx-auto items-center  justify-between h-full relative   ">
         <Link to={"/"}
@@ -43,7 +43,7 @@ const Header = () => {
               onClick={() => handleClose()}
             >
               <div className="hover:bg-slate-600/10 p-2 rounded-md  text-lg">
-                <h3>{link.text}</h3>
+                <a>{link.text}</a>
               </div>
             </Link>
           ))}

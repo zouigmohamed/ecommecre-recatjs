@@ -30,9 +30,18 @@ const Sidebar = () => {
       </div>
       <div className=" flex flex-col gap-y-2 h-[120px] lg:h-[440px] sm:h-[400px]  flex-grow overflow-y-auto ">
         {cart.length === 0 ? (
-          <h1 className="w-3/4 rounded-md mx-auto text-center py-8  px-2 uppercase leading-10 border-4  border-bg-slate-500/30 my-5">
-            no items added to your cart yet{" "}
-          </h1>
+          <div className="w-3/4 rounded-md mx-auto text-center py-8  px-2 uppercase leading-10 border-4  border-bg-slate-500/30 my-5">
+            <h1 className="w-full rounded-md mx-auto text-center py-8  px-2 uppercase leading-10 ">
+              no items added to your cart yet
+            </h1>
+            <a
+              href="/#products"
+              onClick={() => handleClose()}
+              className="bg-emerald-300 p-2 rounded-lg text-gray-800 w-1/2 font-bold tracking-[8px]"
+            >
+              explore our products
+            </a>
+          </div>
         ) : (
           cart.map((item) => <CartItem key={item.id} item={item} />)
         )}
@@ -44,9 +53,12 @@ const Sidebar = () => {
             {parseFloat(total.toFixed(2))}
           </div>
           <div
-            onClick={() => {clearCart(); handleClose()}}
+            onClick={() => {
+              clearCart();
+              handleClose();
+            }}
             className={`${
-              cart.length < 1 ? "cursor-not-allowed" : "cursor-pointer"
+              cart.length < 1 ? " pointer-events-none" : "cursor-pointer"
             } py-4 bg-rose-600  text-white w-12 h-12 flex justify-center items-center text-xl border-2 border-transparent rounded-lg transition-all duration-300 hover:bg-transparent hover:text-black hover:border-rose-600`}
           >
             <FiTrash2 />
